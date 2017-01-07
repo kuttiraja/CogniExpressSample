@@ -9,7 +9,7 @@ var strategyFunc = function() {
             },
             function(usernameInput, passwordInput, done) {
                 //Sign In
-                var url = "mongodb://localhost:27017/booksapi";
+                var url = 'mongodb://vishalgcogni:river808@ds127988.mlab.com:27988/booksapi';
                 mongodb.connect(url, function(err, db) {
                     var collection = db.collection('users');
                     collection.findOne({ username: usernameInput }, function(err, results) {
