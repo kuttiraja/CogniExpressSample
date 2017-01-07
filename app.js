@@ -9,7 +9,8 @@ app.set('view engine', 'ejs')
 
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/booksapi');
+//mongoose.connect('mongodb://localhost/booksapi');
+mongoose.connect('mongodb://vishalgcogni:river808@ds127988.mlab.com:27988/booksapi');
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
