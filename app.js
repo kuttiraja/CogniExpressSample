@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 var bookModel = require('./src/models/bookModel')
 
 //Book Router for browsing the books
-var bookRouter = require('./src/Routes/bookRoutes')(bookModel);
+var bookRouter = require('./src/routes/bookRoutes')(bookModel);
 app.use('/api', bookRouter); //middleware - last practical of today session
 
 //AdminRouter for addition of Books
